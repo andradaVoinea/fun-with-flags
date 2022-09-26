@@ -1,0 +1,51 @@
+img {
+  width: 70;
+}
+.button {
+  border: 2px solid rgb(205, 148, 193);
+  background-color: #f0cae4;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button:hover {
+  border: 1px solid #888;
+  position: relative;
+  border-bottom: 1px dotted black;
+  background-color: #ddd;
+}
+.button:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  left: 0;
+  background-color: rgb(238, 179, 231);
+  color: #fff;
+  text-align: left;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+}
+
+.button:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

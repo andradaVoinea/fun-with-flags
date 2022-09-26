@@ -1,0 +1,119 @@
+<!-- Create a list of 10 flags. Each flag should be represented by a an image. 
+When you make hover on a button a square rectangle should appear with a description of the country -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funWithFlags</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <p> <em> <u> <strong>Best countries to visit in 2022</strong></u></em>
+        <ol> 
+            <li>  Cook Island 
+                <br>
+                <img src="img/cook island.png" width="100" alt="Cook Island">
+                 <br>
+                <button type="button" class="button" onclick="toggleImage('image1')" data-hover="Authentic Polynesian traditions pair with a bold 
+                approach to sustainability on this proudly independent South Pacific nation. 
+                A diverse landscape full of adventure, interaction, and culinary delights 
+                awaits all who visit Cook Islands.">Show</button>
+                <img id="image1" class="hidden" src="img/cookislandpic.jfif" alt="Cook Island" />
+            </li> 
+            <li>  Norway 
+                <br>
+                <img src="img/norway.png" width="100" alt="Norway"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image2')" data-hover="Inspiring landscapes, wilderness, and jaw-dropping fjords 
+                are just a small portion of Norway’s natural beauty. This sustainability leader is also busy introducing the 
+                world to new cultural icons with its brand new museum dedicated to Edvard Munch, and its the beautifully 
+                refurbished National Museum, the largest art museum in the Nordic countries.">Show</button>
+                <img id="image2" class="hidden" src="img/norwaylights.jfif" alt= "Norway Lights"/>
+            </li> 
+            <li>  Mauritius 
+                <br>
+                <img src="img/mauritius.png" width="100" alt="Mauritius"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image3')" data-hover="Looking for lots of outdoor adventure? Head to the beautiful 
+                island of Mauritius. Mark Twain compared the island’s coral reefs and transparent waters set against a rugged
+                interior backdrop to paradise. This island’s fascinating cultural mix and intriguing natural setting make 
+                it the perfect remote escape.">Show</button>
+                <img id="image3" class="hidden" src="img/mauritiuswaters.jfif" alt= "Mauritius Waters"/>
+            </li> 
+            <li>  Belize 
+                <br>
+                <img src="img/belize.png" width="100" alt="Belize"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image4')" data-hover="Belize is where chilled out vibes and adventure combine. 
+                It has the world’s second largest barrier reef, relics from its Maya past and wildlife experiences ranging 
+                from birdwatching to jaguar-spotting. This nation may be small but it’s the place to go for relaxation 
+                and adventure in equal measure.">Show</button>
+                <img id="image4" class="hidden" src="img/belizewaters.jfif" alt= "Belize Waters">
+            </li> 
+            <li>  Slovenia 
+                <br>
+                <img src="img/slovenia.jfif" width="100" alt="Slovenia"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image5')" data-hover="If one word could describe Slovenia it would be green 
+                – literally and figuratively. Some two-thirds of the nation is forested, and the ‘Slovenia Green’ 
+                eco certification is among Europe’s most rigorous. This is the place to come for unheralded wine and culinary 
+                prowess plus hiking and cycling trails wedged between the Alps and the Adriatic.">Show</button> 
+                <img id="image5" class="hidden" src="img/sloveniamountains.jfif" alt= "Slovenia Mountains">
+            </li> 
+            <li>  Anguilla 
+                <br>
+                <img src="img/anguilla.png" width="100" alt="Anguilla"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image6')" data-hover="Discover the eco-friendly island named after an eel, 
+                Anguilla. Explore by bike or scooter, snorkel it’s psychedelic-hued reefs, laze on pink-tinged beaches, 
+                delve into its historic ruins and join locals for evening barbecues.">Show</button>
+                <img id="image6" class="hidden" src="img/anguillawaters.jfif" alt= "Anguilla Waters">
+            </li> 
+            <li>  Oman 
+                <br>
+                <img src="img/oman.png" width="100" alt="Oman"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image7')" data-hover="Experience all that is alluring about the 
+                Arabian peninsula in the progressive Gulf destination of Oman. Wild, open deserts, vast mountain ranges, 
+                a shimmering coastline, and vibrant cities make it a prime destination for those looking to experience 
+                a country with strong cultural heritage.">Show</button>
+                <img id="image7" class="hidden" src="img/omanlights.jfif" alt= "Oman Lights">
+            </li> 
+            <li>  Nepal 
+                <br>
+                <img src="img/nepal.png" width="100" alt="Nepal"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image8')" data-hover="Get away from it all at the high passes of Himalayas 
+                in Nepal. Experience the front door to the world’s tallest peaks, a spectacular playground for trekkers, 
+                climbers and adventurers. Social distance the natural way in a Himalayan wonderland of 
+                mountains and monasteries.">Show</button>
+                <img id="image8" class="hidden" src="img/nepalmountains.jfif" alt= "Nepal Mountains">
+            </li> 
+            <li>  Malawi 
+                <br>
+                <img src="img/malawi.png" width="100" alt="Malawi"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image9')" data-hover="Add conservation work and wildlife-watching to the list
+                 of things that add to the appeal of Malawi. Its eponymous lake, reggae-loving beach towns, 
+                 mountaintop mission stations, hiking trails, and three major wildlife reserves make this small African country 
+                 wildly popular.">Show</button>
+                 <img id="image9" class="hidden" src="img/malawiwaters.jfif" alt= "Malawi Waters">
+            </li> 
+            <li>  Egypt 
+                <br>
+                <img src="img/egypt.png" width="100" alt="Egypt"> 
+                <br>
+                <button type="button" class="button" onclick="toggleImage('image10')" data-hover="Egypt is breaking away from its long tourism history
+                of temples and tombs and moving toward grassroots tourism start-ups, reflecting a country full of broad cultural
+                 riches. Leave room for some history, though: In 2022, the country will commemorate the centennial of the 
+                 discovery of Tutankhamun’s tomb.">Show</button>
+                 <img id="image10" class="hidden" src="img/egyptpyramids.jfif" alt= "Egypt Pyramids">
+            </li> 
+        </ol>
+    </body>
+    </p>
+</html>
